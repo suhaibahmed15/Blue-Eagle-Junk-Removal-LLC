@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+  <title>Blue Eagle Junk Removal LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="cur"></div>
+  <div id="ring"></div>
+
+  <nav id="nav" aria-label="Main navigation">
+    <div class="wrap">
+      <div class="ni">
+        <a href='/'> <img class="logo" src="blue eagle llc.png" alt="Logo"></a>
+
+        <ul class="nlinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact-information">Contact</a></li>
+        </ul>
+        <a href="#quote" class="nbtn nbtn-w" style="text-decoration:none">Get Free Quote</a>
+        <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mov" id="mov"></div>
+  <nav class="mdr" id="mdr">
+    <a href="#hero" onclick="closeD()">Home</a>
+    <a href="#about" onclick="closeD()">About</a>
+    <a href="#services" onclick="closeD()">Services</a>
+    <a href="#reviews" onclick="closeD()">Reviews</a>
+    <a href="#areas" onclick="closeD()">Service Areas</a>
+    <a href="#contact-information" onclick="closeD()">Contact</a>
+    <a href="#quote" class="mcta" onclick="closeD()">🦅 Get Free Quote</a>
+  </nav>
+
+  <section id="hero">
+    <canvas id="hcanvas"></canvas>
+    <div class="hslash"></div>
+    <div class="hslash2"></div>
+    <div class="hglow"></div>
+    <svg class="heagle" viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M260 40C210 70 135 92 82 158 48 200 36 244 58 276 80 308 124 298 165 278 188 266 210 244 232 232L260 250 288 232C310 244 332 266 355 278 396 298 440 308 462 276 484 244 472 200 438 158 385 92 310 70 260 40Z"
+        fill="white" />
+      <path
+        d="M260 115C238 137 206 152 184 178 168 200 164 226 178 242 190 254 210 250 226 236L260 252 294 236C310 250 330 254 342 242 356 226 352 200 336 178 314 152 282 137 260 115Z"
+        fill="white" />
+      <ellipse cx="260" cy="262" rx="22" ry="32" fill="white" />
+      <path d="M184 178L95 136 84 158 172 196Z" fill="white" opacity=".65" />
+      <path d="M168 200L74 172 68 194 160 216Z" fill="white" opacity=".55" />
+      <path d="M164 226L62 214 65 236 162 242Z" fill="white" opacity=".45" />
+      <path d="M336 178L425 136 436 158 348 196Z" fill="white" opacity=".65" />
+      <path d="M352 200L446 172 452 194 340 216Z" fill="white" opacity=".55" />
+      <path d="M356 226L458 214 455 236 358 242Z" fill="white" opacity=".45" />
+      <path d="M238 290L228 360 244 362 260 310 276 362 292 360 282 290Z" fill="white" opacity=".6" />
+      <path d="M220 294L200 368 216 366 236 300Z" fill="white" opacity=".4" />
+      <path d="M300 294L320 368 304 366 284 300Z" fill="white" opacity=".4" />
+    </svg>
+    <div class="wrap">
+      <div class="hcontent">
+        <div class="hbadge"><span class="bdot"></span>Highland, Michigan's #1 Junk Removal</div>
+        <h1 class="hhl">
+          <span class="ln"><span class="li">From Cluttered</span></span>
+          <span class="ln"><span class="li">To Clear —</span></span>
+          <span class="ln"><span class="li">We Remove It All.</span></span>
+        </h1>
+        <p class="hsub">Eco-friendly junk removal for homes &amp; businesses across Oakland County, MI. Fast,
+          affordable, and always professional.</p>
+        <div class="hctas">
+          <a href="#quote" class="bsolid">📋 Get A Free Quote</a>
+          <a href="tel:2482421376" class="bghost">📞 (248) 242-1376</a>
+        </div>
+        <div class="hstats">
+          <div class="hstat">
+            <div class="hstat-n" data-target="10" data-suffix="+">0+</div>
+            <div class="hstat-l">Years Experience</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-n g" data-target="500" data-suffix="+">0+</div>
+            <div class="hstat-l">Jobs Completed</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-n" data-target="155" data-suffix="+">0+</div>
+            <div class="hstat-l">5-Star Reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scue"><span>Scroll</span>
+      <div class="sarrow"></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sch">
+        <div class="eye sr">What We Remove</div>
+        <h2 class="dtitle sr d1">We Haul <span class="b">Everything</span></h2>
+        <p class="sr d2" 
+          style="color:var(--muted);max-width:520px;margin:16px auto 0;font-size:.95rem;line-height:1.72">
+          No job too big or small — professional junk removal for your home or business.
+        </p>
+      </div>
+
+      <div class="sgrid">
+        <div class="sc sr">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://tse1.mm.bing.net/th/id/OIP.e7sFEoTXG4i2vwtUkIAL3wHaE8?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3');">
+              <div class="s-overlay"></div>
+              <div class="snm">Appliance Removal</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">We safely haul away fridges, washers, and dryers for eco-friendly recycling. Our team handles the heavy lifting through tight spaces so you don’t risk damaging your floors or back.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d1">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.56K1vQjbeP1QRks5tvzLQgHaE2?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3');">
+              <div class="s-overlay"></div>
+              <div class="snm">Hot Tub Removal</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Complete disassembly and removal of old spas and tubs. We cut shells into manageable pieces for swift extraction, ensuring your patio is left safe and spotless for future use.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d2">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.DRfb1b5IAOoHYf_o1HCd-QHaE7?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3');">
+              <div class="s-overlay"></div>
+              <div class="snm">Electronic Waste</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Dispose of TVs and computers responsibly via strict e-waste protocols. We partner with certified centers to recover precious metals and prevent hazardous chemicals from reaching local landfills.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://housemovers.co.za/wp-content/uploads/2023/01/apartment-moves.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Furniture Removal</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">From heavy sectionals to old armoires, we handle it all with ease. We prioritize donating usable items to local charities to help families in need and reduce community waste.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d1">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.wDgV3bsw8glUKBGUnPpk2wHaEJ?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3');">
+              <div class="s-overlay"></div>
+              <div class="snm">Yard Waste</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Quick cleanup of branches, leaves, and storm debris to restore your curb appeal. We haul away organic matter for industrial composting, leaving your lawn and driveway perfectly clear.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d2">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://providentjunk.ca/wp-content/uploads/2024/12/urban-demolition-site-with-scattered-debris-construction-waste_963414-16468-1024x447.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Construction Waste</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Post-renovation cleanup of drywall, lumber, and tile. We keep your job site safe by sorting recyclables from general trash, allowing you to focus on the finishing touches of your build.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://www.snappyrubbishremovals.co.uk/wp-content/uploads/2023/12/cheap-mattress-removal-in-London.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Mattress Removal</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Hygienic removal of old mattresses for specialized recycling. Our partners strip these down to recover steel and fibers, ensuring nearly 90% of materials are repurposed rather than buried.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d1">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://bandithaulers.com/wp-content/uploads/2025/07/Estate-Cleanout-Checklist-Guide.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Estate Cleanouts</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Compassionate property clearing during difficult transitions. We work with families to sort sentimental items from clutter, leaving the home "broom-clean" and ready for sale or new tenants.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d2">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://klooshauling.com/wp-content/uploads/2019/03/How-is-commercial-junk-removal-different-from-residential-junk-removal-cover.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Commercial Junk</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Rapid removal of office furniture and warehouse clutter. We offer flexible, after-hours scheduling to ensure we clear your space without disrupting your daily business operations or employees.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://pinestatehauling.com/wp-content/uploads/2023/02/shed-removal.webp');">
+              <div class="s-overlay"></div>
+              <div class="snm">Shed & Deck Demo</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">We dismantle and haul away old structures safely. Our team uses magnetic sweeps to clear every nail and piece of hardware, providing you a clean slate for your next backyard project.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d1">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/4UrTPQbEes1TSz6fdiZDUA/o.jpg');">
+              <div class="s-overlay"></div>
+              <div class="snm">Storage Cleanup</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Reclaim your garage or basement from years of accumulated clutter. We help sort, recycle, and haul away unwanted items in high-capacity trucks, often clearing entire rooms in a single visit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc sr d2">
+          <div class="sc-inner">
+            <div class="sc-front" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.RVRob_fCrGngMFCsNabEVQHaE8?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3');">
+              <div class="s-overlay"></div>
+              <div class="snm">Scrap Metal</div>
+            </div>
+            <div class="sc-back">
+              <p class="sd">Sustainable pick-up of metal pipes, auto parts, and appliances. We keep metals in the circular economy by delivering them to local recycling centers to be repurposed into new raw materials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wgrid"></div>
+    <div class="wrap wi">
+      <div class="wh">
+        <div class="eye sr">Why Choose Us</div>
+        <h2 class="dtitle sr d1">The <span class="b">Blue Eagle</span><br>Difference</h2>
+      </div>
+      <div class="fgrid">
+        <div class="fc2 sr">
+          <div class="fcc"></div>
+          <div class="fico">🌱</div>
+          <div class="ftit">Eco-Friendly Disposal</div>
+          <p class="fdesc">We recycle and donate whenever possible. Our eco-first approach keeps Michigan green.</p>
+        </div>
+        <div class="fc2 sr d1">
+          <div class="fcc"></div>
+          <div class="fico">💰</div>
+          <div class="ftit">Transparent Pricing</div>
+          <p class="fdesc">Zero hidden fees. You get an honest upfront quote before we lift a single item.</p>
+        </div>
+        <div class="fc2 sr d2">
+          <div class="fcc"></div>
+          <div class="fico">⚡</div>
+          <div class="ftit">Same-Day Service</div>
+          <p class="fdesc">Emergency and same-day pickups available when you need it done now.</p>
+        </div>
+        <div class="fc2 sr d3">
+          <div class="fcc"></div>
+          <div class="fico gld">🛡️</div>
+          <div class="ftit">Licensed &amp; Insured</div>
+          <p class="fdesc">Fully licensed, bonded, and insured for every job. Complete peace of mind.</p>
+        </div>
+        <div class="fc2 sr d4">
+          <div class="fcc"></div>
+          <div class="fico gld">🎖️</div>
+          <div class="ftit">Military Discount</div>
+          <p class="fdesc">Active duty and veterans receive a special discount. Thank you for your service.</p>
+        </div>
+        <div class="fc2 sr d5">
+          <div class="fcc"></div>
+          <div class="fico">🏡</div>
+          <div class="ftit">Free In-Home Estimates</div>
+          <p class="fdesc">We come to you for an accurate, no-obligation quote right at your property.</p>
+        </div>
+      </div>
+      <div class="wstats">
+        <div class="wst sr">
+          <div class="wnum" data-target="10" data-suffix="+">0+</div>
+          <div class="wlbl">Years in Business</div>
+        </div>
+        <div class="wst sr d1">
+          <div class="wnum g" data-target="500" data-suffix="+">0+</div>
+          <div class="wlbl">Happy Customers</div>
+        </div>
+        <div class="wst sr d2">
+          <div class="wnum" data-target="155" data-suffix="+">0+</div>
+          <div class="wlbl">5-Star Reviews</div>
+        </div>
+        <div class="wst sr d3">
+          <div class="wnum g" data-target="100" data-suffix="%">0%</div>
+          <div class="wlbl">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+  <div class="wrap">
+    <div class="agrid">
+      <div class="sr">
+        <div class="eye">About Us</div>
+        <h2 class="dtitle d1">10+ Years Serving<br><span class="b">Oakland County</span></h2>
+        <p class="d2" style="color:var(--muted);font-size:1rem;line-height:1.78;margin:24px 0 8px">
+          Blue Eagle Junk Removal LLC was founded on a simple promise: treat every customer's property with the
+          respect it deserves. Since 2014, we've been the trusted partner for hundreds of families and businesses
+          across Highland, Milford, White Lake, and beyond.
+        </p>
+        
+        <div class="avals d3">
+          <div class="av"><span class="av-ic">🎯</span>
+            <div><strong>Our Mission</strong><span>Fast, affordable, eco-responsible junk removal that transforms spaces and relieves stress.</span></div>
+          </div>
+          <div class="av"><span class="av-ic">🔭</span>
+            <div><strong>Our Vision</strong><span>To be the most trusted junk removal name across all of Oakland County and Southeast Michigan.</span></div>
+          </div>
+          <div class="av"><span class="av-ic">💎</span>
+            <div><strong>Our Values</strong><span>Honesty, reliability, environmental responsibility, and genuine care for every customer.</span></div>
+          </div>
+        </div>
+
+        <div class="ocard d4">
+          <div class="oav">SG</div>
+          <div><span class="oav-n">Sal Gutierrez</span><span class="oav-t">Owner &amp; Founder — Blue Eagle Junk Removal LLC</span></div>
+        </div>
+      </div>
+
+      <div class="avis sr-r">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://player.vimeo.com/video/1097699299?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;autoplay=1&amp;loop=1&amp;muted=1" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            title="Background Video">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="rh">
+        <div class="eye sr">Customer Reviews</div>
+        <h2 class="dtitle sr d1">What <span class="b">Our Customers</span> Say</h2>
+        <p class="sr d2" style="color:var(--muted);max-width:480px;margin:14px auto 0;font-size:.9rem">155+ five-star
+          reviews on Google. Real people. Real results.</p>
+      </div>
+    </div>
+    <div class="mw">
+      <div class="mt" id="mt">
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Top notch service! They came out the day I contacted them and gave me a quote. Sal and his team
+            then came out the next day and were efficient and professional and courteous! Will definitely use Blue Eagle
+            again :)"</p>
+          <div class="rf"><span class="rn">Bendoescamera</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Sal was wonderful. He was very responsive, quick, and professional. If I need to have anything
+            removed in the future I will definitely be using Blue Eagle."</p>
+          <div class="rf"><span class="rn">Jamie Caldwell</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Tony and Tony from Blue Eagle Junk Removal did an outstanding job. They were responsive, they
+            communicated and were very kind and helpful when they came to my house. I will definitely use them again and
+            encourage others to do the same."</p>
+          <div class="rf"><span class="rn">danielle morris</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Salvador and Michael are a joy to work with. Focussed on customer service and very pleasant
+            people in general! All my junk was removed efficiently and I will call them again!"</p>
+          <div class="rf"><span class="rn">John Boville</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Sal took my call in the evening and was able to pickup the next day. Sal and his team were
+            prompt, efficient, and personable. I would 100% call Sal and his team again."</p>
+          <div class="rf"><span class="rn">Cory</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"If you have a heap of junk that needs removal look no further…Sal is your man!! He answered my
+            call and came by to assess the situation the same day. His quote was very reasonable. He hauled 2 full loads
+            of junk in one day. He and his assistant left the garage clean and tidy. I’ll definitely use his service
+            again in the future. He’s a great guy!"</p>
+          <div class="rf"><span class="rn">Carrie Sculati</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"I called Sal, really nice man. Worked fast and efficient. His team arrived before scheduled
+            time and treated me with respect and kindness.
+            I would highly recommend."</p>
+          <div class="rf"><span class="rn">
+              MaryArline</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Had to get rid of an old couch and bed frame right away and I found Blue Eagle when I goggled
+            searched. They had a high rating so I went in the website over the weekend and they have a handy request for
+            quote, it was easy to fill out. I didn’t expect to hear back until Monday but I received a call less than 5
+            minutes back by the owner. He gave me a good quote and showed up Monday morning! Courteous, professional and
+            great communication! Thank you Sal!"</p>
+          <div class="rf"><span class="rn">Tracey Guzman</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"I recently hired Sal and his crew to remove a large amount of junk from a house that we are
+            getting ready to sell. Excellent communication! They showed up on time and ready to work. Dealing with this
+            family run business was awesome. Very pleasant and followed directions to the letter. All in all they hauled
+            4 and a half large trailer loads and had it all done in one day! I am very impressed with Blue Eagle Junk
+            Removal and will definitely hire them again in the future.
+            x Thank you so much, Sal."</p>
+          <div class="rf"><span class="rn">E W</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Sal the owner of the company comes out with his team punctually. They did a fabulous job and
+            cleaned up the dust and dirt that was left after the items were removed. Highly recommend them! fabulous
+            job.Very professional ."</p>
+          <div class="rf"><span class="rn">Lois Langberg</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"So I got in touch with them today about an hour and a half later they showed up on site. They
+            took a lot of outdoor things they had to walk up and down a flight of stairs taken down heavy grills. I
+            would definitely recommend them and definitely gonna be using them again, the guys are awesome. Thanks so
+            much."</p>
+          <div class="rf"><span class="rn">Rob Golobo</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"Sal was awesome. He was quick and respectful of property. Defiantly using again in the future.
+            Thank you Sal!</p>
+          <div class="rf"><span class="rn">J F</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"what a great company and crew! Responsive to my inquiry and on time and fast! Removed my
+            treadmill and stationary bike. Thank you!"</p>
+          <div class="rf"><span class="rn">Chris Stahelin</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"From the time they gave me a quote to the time the hot tub was removed. was about three -four
+            hours. Staff was friendly professional, and cleaned up everything.B"</p>
+          <div class="rf"><span class="rn">John Lewis</span><span class="rsrc">Google</span></div>
+        </div>
+        <div class="rc">
+          <div class="rstars">★★★★★</div>
+          <p class="rq">"These guys are the best. Did a great job for a fair price. They cleaned all of the construction
+            debris out of my garage from a renovation and left it clean. Super quick, friendly, and helpful. Will be
+            recommending them to others."</p>
+          <div class="rf"><span class="rn">Tom Hill</span><span class="rsrc">Google</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="eye sr" style="justify-content:center">Service Areas</div>
+      <h2 class="atitle sr d1">Proudly Serving <em>Oakland County</em></h2>
+      <div class="pills sr d2">
+        <span class="pill"> Highland, MI</span>
+        <span class="pill"> Milford, MI</span>
+        <span class="pill"> White Lake, MI</span>
+        <span class="pill"> Hartland, MI</span>
+        <span class="pill"> Waterford, MI</span>
+        <span class="pill"> Clarkston, MI</span>
+        <span class="pill"> Holly, MI</span>
+
+
+      </div>
+      <p class="asince sr d3">🦅 Proudly serving your community since 2014 — locally owned &amp; operated.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="cgrid">
+        <div>
+          <div class="eye sr">Get In Touch</div>
+          <h2 class="dtitle sr d1">Get Your<br><span class="b">Free Quote</span></h2>
+          <p class="cdesc sr d2">Ready to reclaim your space? Contact us for a free, no-obligation estimate. We respond
+            fast and scheduling is easy.</p>
+          <div class="ccards">
+            <a href="tel:2482421376" class="cc sr d1">
+              <div class="cc-ic">📞</div>
+              <div class="cc-t"><strong>(248) 242-1376</strong><span>Call or Text Anytime</span></div>
+            </a>
+            <a href="mailto:info@blueeaglejunkremoval.com" class="cc sr d2">
+              <div class="cc-ic">✉️</div>
+              <div class="cc-t"><strong>info@blueeaglejunkremoval.com</strong><span>We respond within a few
+                  hours</span></div>
+            </a>
+            <div class="cc sr d3" style="cursor:default;">
+              <div class="cc-ic">🕐</div>
+              <div class="cc-t"><strong>Mon – Fri: 8AM – 6PM & Sat: 8AM – 5PM</strong><span>Emergency service available
+                  outside
+                  hours</span></div>
+            </div>
+          </div>
+          <div class="socrow sr d4">
+            <a href="#" class="slink" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="slink" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="slink" title="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#" class="slink" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="qform sr-r">
+          <h3 class="qtit" id="quote">Request a Quote</h3>
+          <p class="qsub">Fill out the form and we'll get back to you within the hour.</p>
+          <form id="quote-form" action="https://getform.io/f/j53uwmqvfdd" method="POST" enctype="multipart/form-data">
+            <div class="fr2">
+              <div class="fg"><label for="fn">Full Name</label><input type="text" id="fn" name="fi-sender-fullName"
+                  placeholder="Full Name" required>
+              </div>
+              <div class="fg"><label for="fp">Phone Number</label><input type="tel" id="fp" name="fi-sender-phone"
+                  placeholder="Phone Number with Country Code" required></div>
+              <div class="fg"><label for="fe">Email Address</label><input type="email" id="fe" name="fi-sender-email"
+                  placeholder="Email Address" required></div>
+              <div class="fg"><label for="fj">Type of Junk</label>
+                <select id="fj" name="fi-select-junkType">
+                  <option value="">Select a service...</option>
+                  <option>Appliance Removal</option>
+                  <option>Hot Tub Removal</option>
+                  <option>Electronic Waste</option>
+                  <option>Garage / Basement Cleanout</option>
+                  <option>Estate Cleanout</option>
+                  <option>Construction Debris</option>
+                  <option>Yard Waste</option>
+                  <option>Shed / Deck Removal</option>
+                  <option>Commercial Cleanout</option>
+                  <option>Hoarding Cleanout</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="fg full">
+                <label for="fi">Upload Photos (Optional)</label>
+                <div class="upload-container" id="dropzone">
+                  <input type="file" id="fi" name="fi-file-photos[]" accept="image/*" multiple style="display:none">
+                  <div class="upload-content" id="upload-click">
+                    <span class="u-icon">📸</span>
+                    <span class="u-text">Add photos for a more accurate quote</span>
+                    <span class="u-sub">Max 5 images • JPG, PNG • Drag & Drop here</span>
+                  </div>
+                  <div id="preview-grid" class="preview-grid"></div>
+                </div>
+              </div>
+
+              <div class="fg full"><label for="fm">Message / Details</label><textarea id="fm"
+                  placeholder="Tell us what needs removing, your location, and any details..."></textarea></div>
+            </div>
+            <button class="fsbmt" type="submit">🦅 Get My Free Quote →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a class="wa-float" href="https://wa.me/12482421376" target="_blank">
+    <div class="wa-btn">
+      <svg viewBox="0 0 24 24">
+        <path fill="white"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </div>
+  </a>
+  <footer>
+    <div class="wrap">
+      <div class="ftop">
+        <div class="fcol">
+         <a href="#hero"> <img class="logo" src="blue eagle llc.png" alt="Logo"></a>
+
+          <p class="fbtag">Professional junk removal for homes &amp; businesses across Oakland County, Michigan. Fast,
+            eco-friendly, and always honest since 2014.</p>
+         
+        </div>
+        <div class="fcol">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#areas">Service Areas</a></li>
+            <li><a href="#contact-information">Contact</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Our Services</h4>
+          <ul class="fsvclist">
+            <li class="fsvc-item"><a href="#services"><span class="fvlbl">Appliance
+                  Removal<span class="fvsub">Fridges, washers &amp; dryers</span></span></a></li>
+            <li class="fsvc-item"><a href="#services"><span class="fvlbl">Hot Tub
+                  Removal<span class="fvsub">Full disassembly &amp; haul</span></span></a></li>
+            <li class="fsvc-item"><a href="#services"></span><span class="fvlbl">Electronic
+                  Waste<span class="fvsub">TVs, computers &amp; monitors</span></span></a></li>
+            <li class="fsvc-item"><a href="#services"></span><span class="fvlbl">Full
+                  Cleanouts<span class="fvsub">Attic, basement, garage</span></span></a></li>
+            <li class="fsvc-item"><a href="#services">More Services</a></li>
+
+
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4 id="contact-information">Contact</h4>
+          <ul>
+            <li><a href="tel:2482421376"> (248) 242-1376</a></li>
+            <li><a href="mailto:info@blueeaglejunkremoval.com">Email Us</a></li>
+            <li><a href="#areas"> Highland, Michigan</a></li>
+            <li><a href="#quote" style="display: flex; gap: 8px; text-decoration: none;">
+                <span></span><span style="display: grid; grid-template-columns: auto auto; gap: 0 10px;">
+                  <span style="margin-left: -6px;">Mon–Fri:</span> <span>7AM–9PM</span>
+                  <span style="margin-left: -6px;">Saturday:</span> <span>8AM–5PM</span></span></a></li>
+            <li><a href="#quote"> Free Estimates</a></li>
+            <li><a href="#quote"> Military Discount</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fbot">
+        <p>© 2026 Blue Eagle Junk Removal LLC. All Rights Reserved.</p>
+        <p>Handcrafted with Precision for <a href="tel:2482421376"> Blue Eagle Junk Removal LLC</a></p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="chatbot.js"></script>
+</body>
+
+</html>
