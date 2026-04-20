@@ -1,6 +1,5 @@
 /* ════════════════════════════════════════════════════════════
-   BLUE EAGLE AI CHATBOT — chatbot.js (Cerebras Powered)
-   Drop this <script src="chatbot.js"></script> before </body>
+                          chatbot.js
    ════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -8,12 +7,12 @@
   const BUSINESS = {
     name: "Blue Eagle Junk Removal LLC",
     phone: "(248) 242-1376",
-    email: "salvadorgutierrez2012@gmail.com",
-    hours: "Mon–Fri 8AM–6PM",
+    email: "info@blueeaglejunkremoval.com",
+    hours: "Mon–Fri: 7AM–9PM & Sat: 8AM–6PM",
     location: "Highland, Michigan",
     owner: "Sal Gutierrez",
     founded: "2014",
-    areas: "Highland, Milford, White Lake, Hartland, Waterford, Commerce Township, Wixom, Pontiac — all of Oakland County, MI",
+    areas: "Highland, Milford, White Lake, Hartland, Waterford,Clarkston , Holly, MI",
     services: "Appliance Removal, Hot Tub Removal, Electronic Waste, Garbage & Trash, Full Cleanouts, Mattress Removal, Post-Construction Debris, Recycling, Commercial Junk, Yard Waste, Construction Debris, Shed Removal, Deck Removal, Attic/Basement/Garage Cleanouts, Estate Cleanouts, Hoarding Cleanouts, Brush & Debris",
     perks: "Eco-friendly disposal, transparent pricing, same-day service, licensed & insured, military discount, free in-home estimates",
   };
@@ -153,19 +152,19 @@ GUIDELINES:
   const quickReplies = document.getElementById('be-quick-replies');
 
   /* ── ACTIONS ── */
-  function openChat() { 
-    win.classList.add('open'); 
-    fab.classList.add('open'); 
-    badge.classList.add('hidden'); 
-    if(msgs.children.length === 0) addWelcome();
+  function openChat() {
+    win.classList.add('open');
+    fab.classList.add('open');
+    badge.classList.add('hidden');
+    if (msgs.children.length === 0) addWelcome();
     setTimeout(() => input.focus(), 300);
   }
-  
+
   function closeChat() { win.classList.remove('open'); fab.classList.remove('open'); }
   fab.onclick = () => win.classList.contains('open') ? closeChat() : openChat();
 
-  function addWelcome() { 
-    appendMsg('bot', "Hey there! 🦅 I'm the Blue Eagle AI assistant. Need help clearing out some space in Oakland County? Ask me anything!"); 
+  function addWelcome() {
+    appendMsg('bot', "Hey there! 🦅 I'm the Blue Eagle AI assistant. Need help clearing out some space in Oakland County? Ask me anything!");
   }
 
   function appendMsg(role, text) {
@@ -188,7 +187,7 @@ GUIDELINES:
 
   async function sendMessage(text) {
     if (!text.trim() || sendBtn.disabled) return;
-    
+
     quickReplies.style.display = 'none';
     appendMsg('user', text);
     input.value = '';
@@ -221,7 +220,7 @@ GUIDELINES:
       setTimeout(() => {
         const loader = document.getElementById('be-typing-indicator');
         if (loader) loader.remove();
-        
+
         appendMsg('bot', reply);
         CONVERSATION_HISTORY.push({ role: 'assistant', content: reply });
         sendBtn.disabled = false;
@@ -241,7 +240,7 @@ GUIDELINES:
   input.onkeydown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(input.value); }
   };
-  input.addEventListener('input', function() {
+  input.addEventListener('input', function () {
     this.style.height = 'auto';
     this.style.height = (this.scrollHeight) + 'px';
   });
